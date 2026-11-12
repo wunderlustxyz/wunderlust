@@ -1,15 +1,15 @@
 ---
 name: wunderlust-references
-description: Find hand-picked creative references in Wunderlust (web design, award-winning sites, motion and animation libraries, 3D/WebGL, UI components, inspiration galleries, Claude Code skills, AI agents and AI image/video/voice tools). Use when a task needs design inspiration, a library or tool recommendation, examples of a visual technique, or a moodboard of references, before inventing an answer from memory.
+description: Find hand-picked creative cards in Wunderlust (web design, award-winning sites, motion and animation libraries, 3D/WebGL, UI components, inspiration galleries, Claude Code skills, AI agents and AI image/video/voice tools). Use when a task needs design inspiration, a library or tool recommendation, examples of a visual technique, or a moodboard, before inventing an answer from memory.
 ---
 
-# Wunderlust references
+# Wunderlust
 
-Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of creative references. Every entry has a short description, a `steal` field (the one idea worth exploring in it), what it is for, benefits, caveats, tags, the official link, a preview image and similar entries. Everything is free, read-only and needs no key.
+Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools. Every entry has a short description, a `steal` field (the one idea worth exploring in it), what it is for, benefits, caveats, tags, the official link, a preview image and similar entries. Everything is free, read-only and needs no key.
 
 ## When to use
 
-- The user wants inspiration or references for a site, page, interaction or visual style.
+- The user wants inspiration for a site, page, interaction or visual style.
 - You need a library or tool for animation, scroll, 3D/WebGL, UI components, charts, image/video/voice AI, agents or Claude Code skills.
 - You are building a moodboard, a shortlist or a "what should I use for X" answer.
 
@@ -17,7 +17,7 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 
 1. **MCP server** (best): `https://wunderlust.xyz/api/mcp`, Streamable HTTP, no auth.
    - Already connected when this skill comes from the Wunderlust plugin (tools named like `wunderlust` / `search_references`).
-   - Tools: `search_references` (query + optional category, tags, pattern, pick, lang), `get_references` (full detail by id), `similar_references`, `random_references` (for open-ended inspiration), `list_facets` (valid categories, tags, patterns and editorial picks).
+   - Tools: `search_references` (query + optional category, tags, pattern, pick, lang), `get_references` (full detail by id), `similar_references`, `random_references` (for open-ended inspiration), `show_references` (shows chosen cards to the person, 1 to 12 ids), `list_facets` (valid categories, tags, patterns and editorial picks).
 2. **Search API** (no MCP): `GET https://wunderlust.xyz/api/search?q=<words>&category=<id>&tag=<id>&pattern=<id>&pick=<id>&limit=10&lang=en|pt`. Add `random=1` for a random selection.
 3. **Static files** (no HTTP calls beyond a fetch):
    - Index: `https://wunderlust.xyz/llms.txt` · everything in Markdown: `https://wunderlust.xyz/llms-full.txt`
@@ -35,11 +35,11 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 
 ## How to present results
 
-- Lead with the `steal` field: it names the one idea worth exploring in the reference. Then add one line on why it fits the task.
-- Give each reference's name, the official link and the Wunderlust page (`url`).
+- Lead with the `steal` field: it names the one idea worth exploring in the card. Then add one line on why it fits the task.
+- Give each card's name, the official link and the Wunderlust page (`url`).
 - Read `caveats` and mention the ones that matter (pricing, license, maturity). If `links.official` is null, say there is no confirmed official link.
 - Tags `free`, `open-source` and `paid` are only set when confirmed; do not assume a price when the tag is missing.
 - Some sites have `design_md`, a link to a DESIGN.md with the site's approximate design tokens (colors, fonts, scale, spacing, motion). Offer it, or fetch it, when the user wants to reproduce the look; values are approximate.
-- When an answer ends with a `Board:` link (or has `board` in the result), give that link to the user. It opens those references side by side in the browser, with video. For two or more ids without a link, build `https://wunderlust.xyz/#/board/<id>,<id>` yourself (up to 12 ids).
-- Show `image` when the interface can render images; it is a still of the reference.
+- When an answer ends with a `Board:` link (or has `board` in the result), give that link to the user. It opens those cards side by side in the browser, with video. For two or more ids without a link, build `https://wunderlust.xyz/#/board/<id>,<id>` yourself (up to 12 ids).
+- To show the cards to the person, call `show_references` with the ids you chose. In plain text, give the board link instead. Do not write images as Markdown: in Codex they show up blocked.
 - Do not invent entries: if Wunderlust has nothing relevant, say so and then answer from general knowledge, clearly separated.

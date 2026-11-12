@@ -1,7 +1,7 @@
 {
   "name": "wunderlust",
-  "version": "1.0.1",
-  "description": "Hand-picked creative references for design, motion and AI: award-winning sites, animation and 3D libraries, UI components and AI tools, each with the one idea worth exploring.",
+  "version": "1.0.2",
+  "description": "Hand-picked creative cards for design, motion and AI: award-winning sites, animation and 3D libraries, UI components and AI tools, each with the one idea worth exploring.",
   "author": {
     "name": "Wunderlust",
     "url": "https://wunderlust.xyz"
@@ -13,20 +13,21 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Wunderlust",
-    "shortDescription": "Creative references for design",
-    "longDescription": "Wunderlust is a hand-picked, always-growing stash of creative references for people who design and build: award-winning websites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools, agents and coding skills.\n\nEvery reference is checked and written up by hand in plain English: what it is, what it is for, the one idea worth exploring in it, typical uses, benefits and caveats, with the official link.\n\nAsk for references while you design or build. Search the stash in your own words or by category, tag, design pattern or editorial pick; read the full write-up of a reference with its caveats; find similar references; get a random selection for inspiration; or read a collection someone shared from Wunderlust as a brief. Answers with two or more references include a board link that opens them side by side in the browser, with video.\n\nIt only reads the public stash. It needs no account and never changes anything.",
+    "shortDescription": "Creative cards for design",
+    "longDescription": "Wunderlust is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools for people who design and build: award-winning websites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools, agents and coding skills.\n\nEvery card is checked and written up by hand in plain English: what it is, what it is for, the one idea worth exploring in it, typical uses, benefits and caveats, with the official link.\n\nAsk for ideas while you design or build. Search the stash in your own words or by category, tag, design pattern or editorial pick; read the full write-up of a card with its caveats; find similar cards; get a random selection for inspiration; show chosen cards in the chat; or read a collection someone shared from Wunderlust as a brief. Answers with two or more cards include a board link that opens them side by side in the browser, with video.\n\nIt only reads the public stash. It needs no account and never changes anything.",
     "developerName": "Wunderlust",
     "category": "Creativity",
     "capabilities": [
-      "Search hand-picked creative references by text, category, tag or design pattern",
-      "Read the full write-up of a reference, with its caveats and official link",
-      "Find references similar to one you like",
+      "Search hand-picked sites, skills and AI tools by text, category, tag or pattern",
+      "Read the full write-up of a card, with its caveats and official link",
+      "Find cards similar to one you like",
+      "Show chosen cards in the chat, with cover and preview video",
       "Read a collection someone shared from Wunderlust"
     ],
     "defaultPrompt": [
       "Find award-winning sites with scroll-driven storytelling",
       "Which React animation library should I use for page transitions?",
-      "Give me 5 random references for a playful portfolio"
+      "Give me 5 random sites and tools for a playful portfolio"
     ],
     "logo": "./assets/logo.png",
     "composerIcon": "./assets/composer-icon.png",

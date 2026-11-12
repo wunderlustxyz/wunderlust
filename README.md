@@ -1,10 +1,10 @@
 # Wunderlust
 
-Hand-picked creative references for your AI agent: award-winning sites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools and coding skills. Every reference is written up by hand, with the one idea worth exploring in it, its caveats and the official link.
+Hand-picked creative cards for your AI agent: award-winning sites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools and coding skills. Every card is written up by hand, with the one idea worth exploring in it, its caveats and the official link.
 
 This plugin adds two things to Claude Code and Codex:
 
-- **The Wunderlust connector** (`https://wunderlust.xyz/api/mcp`): search the stash, read a reference, find similar ones, get a random selection, list the categories and patterns, and read a shared collection. Read-only, no account, no key.
+- **The Wunderlust connector** (`https://wunderlust.xyz/api/mcp`): search the stash, read a card, find similar ones, get a random selection, show chosen cards in the chat, list the categories and patterns, and read a shared collection. Read-only, no account, no key.
 - **The `wunderlust-references` skill**: tells your agent when to look in Wunderlust and how to present what it finds.
 
 ## Install
@@ -43,9 +43,10 @@ Add `https://wunderlust.xyz/api/mcp` as a remote MCP server (Streamable HTTP, no
 | Tool | What it does |
 |---|---|
 | `search_references` | Search by free text or by category, tag, pattern or editorial pick |
-| `get_references` | Full write-up of up to 10 references by id |
-| `similar_references` | References similar to one you name |
+| `get_references` | Full write-up of up to 10 cards by id |
+| `similar_references` | Cards similar to one you name |
 | `random_references` | A random selection, for open-ended inspiration |
+| `show_references` | Shows chosen cards in the chat with cover and preview video (apps that support it) |
 | `list_facets` | The valid categories, tags, patterns and picks |
 | `get_collection` | A collection someone shared from Wunderlust |
 
@@ -61,4 +62,4 @@ All tools are read-only. Fair use: up to 600 requests per hour per network.
 
 ## License
 
-MIT for the files in this repository. The references belong to their makers.
+MIT for the files in this repository. The sites, skills and tools in the cards belong to their makers.
