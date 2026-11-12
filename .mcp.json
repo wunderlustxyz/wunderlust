@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wunderlust": {
+      "type": "http",
+      "url": "https://wunderlust.xyz/api/mcp"
+    }
+  }
+}

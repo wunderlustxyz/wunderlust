@@ -1,0 +1,24 @@
+{
+  "name": "wunderlust",
+  "displayName": "Wunderlust",
+  "version": "1.0.0",
+  "description": "Hand-picked creative references for design, motion and AI: award-winning sites, animation and 3D libraries, UI components and AI tools, each with the one idea worth exploring.",
+  "author": {
+    "name": "Wunderlust",
+    "email": "hello@wunderlust.xyz",
+    "url": "https://wunderlust.xyz"
+  },
+  "homepage": "https://wunderlust.xyz",
+  "repository": "https://github.com/wunderlustxyz/wunderlust",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "inspiration",
+    "references",
+    "motion",
+    "animation",
+    "webgl",
+    "ui",
+    "mcp"
+  ]
+}

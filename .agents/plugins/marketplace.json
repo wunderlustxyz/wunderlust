@@ -1,0 +1,20 @@
+{
+  "name": "wunderlust",
+  "interface": {
+    "displayName": "Wunderlust"
+  },
+  "plugins": [
+    {
+      "name": "wunderlust",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}
