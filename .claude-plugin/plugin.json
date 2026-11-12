@@ -1,7 +1,7 @@
 {
   "name": "wunderlust",
   "displayName": "Wunderlust",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hand-picked creative references for design, motion and AI: award-winning sites, animation and 3D libraries, UI components and AI tools, each with the one idea worth exploring.",
   "author": {
     "name": "Wunderlust",
@@ -20,5 +20,10 @@
     "webgl",
     "ui",
     "mcp"
-  ]
+  ],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://wunderlust.xyz/connect",
+  "supportUrl": "mailto:hello@wunderlust.xyz",
+  "privacyPolicyUrl": "https://wunderlust.xyz/privacy",
+  "termsOfServiceUrl": "https://wunderlust.xyz/terms"
 }
