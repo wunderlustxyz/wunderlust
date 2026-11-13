@@ -27,6 +27,7 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 
 ## Tips
 
+- Search by goal: put the task itself in `query`, like "loading screen", "3d hero", "make claude design better" or "improve onboarding". When it matches one of Wunderlust's goals, the cards for that goal are ranked in (inside your filters) and the answer starts with `Goal: <label> (<n> cards).` (the JSON has `goal`). Tell the user which goal you searched. Every goal and its phrases are in `catalog.json` under `goals`.
 - Queries work in English and Portuguese and understand intent words: "scroll", "3D", "free", "open source", "typography", "cursor", "no code", "Claude Code", "inspiration".
 - Narrow with facets instead of long queries: `category` (sites, motion, three, components, skills, galleries, data, media-ai, agents, guides, prompts) and `tag` (free, open-source, paid, award-winning, webgl, scroll, typography, generative, cursor-fx, react, figma, no-code, mcp, claude-code, cli, learning). Call `list_facets` if unsure.
 - Patterns (`pattern`) are recurring ideas worth exploring, grouped as motion, interaction, layout, look and system (e.g. `kinetic-type`, `hover-fx`, `classical-art`, `design-system`). Use one when the user knows what to take ("a hover effect", "something classical") rather than a topic. The search text also matches the `steal` fields.
