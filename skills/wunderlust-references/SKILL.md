@@ -39,6 +39,7 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 - On design cards, use `why` to explain why the idea works and `avoid` to say what to watch out for when the user builds on it. Other cards do not have these two fields.
 - Give each card's name, the official link and the Wunderlust page (`url`).
 - Read `caveats` and mention the ones that matter (pricing, license, maturity). If `links.official` is null, say there is no confirmed official link.
+- Many skill and agent cards have `trust` ("Checked by Wunderlust"): what we read in the code or docs on a given date, such as what the tool can touch (terminal, files, internet, accounts), what it needs (API keys, a paid plan) and where its code lives. Before the user installs one, say what it can touch and what it needs. It is not a security audit, so do not call a tool safe.
 - Tags `free`, `open-source` and `paid` are only set when confirmed; do not assume a price when the tag is missing.
 - Some sites have `design_md`, a link to a DESIGN.md with the site's approximate design tokens (colors, fonts, scale, spacing, motion). Offer it, or fetch it, when the user wants to reproduce the look; values are approximate.
 - When an answer ends with a `Board:` link (or has `board` in the result), give that link to the user. It opens those cards side by side in the browser, with video. For two or more ids without a link, build `https://wunderlust.xyz/#/board/<id>,<id>` yourself (up to 12 ids).
