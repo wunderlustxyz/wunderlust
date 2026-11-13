@@ -5,7 +5,7 @@ description: Find hand-picked creative cards in Wunderlust (web design, award-wi
 
 # Wunderlust
 
-Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools. Every entry has a short description, a `steal` field (the one idea worth exploring in it), what it is for, benefits, caveats, tags, the official link, a preview image and similar entries. Everything is free, read-only and needs no key.
+Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools. Every entry has a short description, a `steal` field (the one idea worth exploring in it), what it is for, benefits, caveats, tags, the official link, a preview image and similar entries. Design cards (sites, UI components, motion and 3D) also have `why` (why the idea works) and `avoid` (what to watch out for when you use the idea). Everything is free, read-only and needs no key.
 
 ## When to use
 
@@ -36,6 +36,7 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 ## How to present results
 
 - Lead with the `steal` field: it names the one idea worth exploring in the card. Then add one line on why it fits the task.
+- On design cards, use `why` to explain why the idea works and `avoid` to say what to watch out for when the user builds on it. Other cards do not have these two fields.
 - Give each card's name, the official link and the Wunderlust page (`url`).
 - Read `caveats` and mention the ones that matter (pricing, license, maturity). If `links.official` is null, say there is no confirmed official link.
 - Tags `free`, `open-source` and `paid` are only set when confirmed; do not assume a price when the tag is missing.

@@ -43,7 +43,7 @@ Add `https://wunderlust.xyz/api/mcp` as a remote MCP server (Streamable HTTP, no
 | Tool | What it does |
 |---|---|
 | `search_references` | Search by free text or by category, tag, pattern or editorial pick |
-| `get_references` | Full write-up of up to 10 cards by id |
+| `get_references` | Full write-up of up to 20 cards by id. Design cards also say why the idea works and what to watch out for |
 | `similar_references` | Cards similar to one you name |
 | `random_references` | A random selection, for open-ended inspiration |
 | `show_references` | Shows chosen cards in the chat with cover and preview video (apps that support it) |
