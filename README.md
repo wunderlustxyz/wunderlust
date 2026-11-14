@@ -49,6 +49,7 @@ Add `https://wunderlust.xyz/api/mcp` as a remote MCP server (Streamable HTTP, no
 | `show_references` | Shows chosen cards in the chat with cover and preview video (apps that support it) |
 | `list_facets` | The valid categories, tags, patterns and picks |
 | `get_collection` | A collection someone shared from Wunderlust |
+| `get_examples` | A few design cards for a UI brief, with why it works, what to watch out for and design tokens for some sites |
 
 All tools are read-only. Fair use: up to 600 requests per hour per network.
 

@@ -17,13 +17,14 @@ Wunderlust (https://wunderlust.xyz) is a hand-picked, always-growing stash of cr
 
 1. **MCP server** (best): `https://wunderlust.xyz/api/mcp`, Streamable HTTP, no auth.
    - Already connected when this skill comes from the Wunderlust plugin (tools named like `wunderlust` / `search_references`).
-   - Tools: `search_references` (query + optional category, tags, pattern, pick, lang), `get_references` (full detail by id), `similar_references`, `random_references` (for open-ended inspiration), `show_references` (shows chosen cards to the person, 1 to 12 ids), `list_facets` (valid categories, tags, patterns and editorial picks).
+   - Tools: `search_references` (query + optional category, tags, pattern, pick, lang), `get_references` (full detail by id), `similar_references`, `random_references` (for open-ended inspiration), `show_references` (shows chosen cards to the person, 1 to 12 ids), `list_facets` (valid categories, tags, patterns and editorial picks), `get_examples` (a few design cards for a UI brief, with design tokens for some sites).
 2. **Search API** (no MCP): `GET https://wunderlust.xyz/api/search?q=<words>&category=<id>&tag=<id>&pattern=<id>&pick=<id>&limit=10&lang=en|pt`. Add `random=1` for a random selection.
 3. **Static files** (no HTTP calls beyond a fetch):
    - Index: `https://wunderlust.xyz/llms.txt` · everything in Markdown: `https://wunderlust.xyz/llms-full.txt`
    - Full catalog: `https://wunderlust.xyz/catalog.json`
    - One entry: `https://wunderlust.xyz/r/<id>.json` or `https://wunderlust.xyz/r/<id>.md`
 4. If the user shares a Wunderlust collection link, call get_collection (MCP) or fetch the link's .md, then follow "How to use this brief".
+5. Before building a UI from scratch, or together with a taste skill such as Impeccable or frontend-design, call `get_examples` with the brief and use the 3 cards and any design tokens as concrete examples. Say which card each choice comes from.
 
 ## Tips
 
