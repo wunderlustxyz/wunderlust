@@ -4,7 +4,7 @@ Hand-picked creative cards for your AI agent: award-winning sites, motion and an
 
 This plugin adds two things to Claude Code and Codex:
 
-- **The Wunderlust connector** (`https://wunderlust.xyz/api/mcp`): search the stash, read a card, find similar ones, get a random selection, show chosen cards in the chat, list the categories and patterns, and read a shared collection. Read-only, no account, no key.
+- **The Wunderlust connector** (`https://wunderlust.xyz/api/mcp`): search the stash, read a card, find similar ones, get a random selection, show chosen cards in the chat, list the categories and patterns, and read a shared collection or public profile. Public reads need no account or key.
 - **The `wunderlust-references` skill**: tells your agent when to look in Wunderlust and how to present what it finds.
 
 ## Install
@@ -42,16 +42,21 @@ Add `https://wunderlust.xyz/api/mcp` as a remote MCP server (Streamable HTTP, no
 
 | Tool | What it does |
 |---|---|
-| `search_references` | Search by free text or by category, tag, pattern or editorial pick |
-| `get_references` | Full write-up of up to 20 cards by id. Design cards also say why the idea works and what to watch out for; skill and agent cards say what Wunderlust checked (what the tool can touch and what it needs) |
+| `search_references` | Search with fit labels, category, tags, patterns, picks, kind, sector, tone, sort, since and cursor |
+| `get_references` | Full write-up of up to 20 cards by id. Design cards also say why the idea works and what to watch out for; skill and agent cards say what Wunderlust checked (what the tool can touch and what it needs); detail "kit" returns the Build Kit of a site card |
 | `similar_references` | Cards similar to one you name |
 | `random_references` | A random selection, for open-ended inspiration |
 | `show_references` | Shows chosen cards in the chat with cover and preview video (apps that support it) |
-| `list_facets` | The valid categories, tags, patterns and picks |
+| `list_facets` | Filter ids, rules, counts, sector page coverage and catalog freshness |
 | `get_collection` | A collection someone shared from Wunderlust |
-| `get_examples` | A few design cards for a UI brief, with why it works, what to watch out for and design tokens for some sites |
+| `get_examples` | Design examples with fit labels, why, avoid and available approximate design tokens |
+| `search` | Compact citation results, only strong or partial matches |
+| `fetch` | Full card Markdown for citation |
+| `get_profile` | Public page data visible to a signed-out visitor |
+| `list_my_collections` | Personal link: collections and My stash |
+| `save_references` | Personal link: add cards and notes when saving is on |
 
-All tools are read-only. Fair use: up to 600 requests per hour per network.
+Public reads need no key. Personal links can add cards when saving is on. Fair use: 600 units per hour per network. A public profile costs 5 units without cache, 1 with cache (60 seconds, at most 200 handles).
 
 ## Links
 

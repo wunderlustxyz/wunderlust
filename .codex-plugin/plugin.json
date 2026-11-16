@@ -1,6 +1,6 @@
 {
   "name": "wunderlust",
-  "version": "1.0.6",
+  "version": "1.7.0",
   "description": "Hand-picked creative cards for design, motion and AI: award-winning sites, animation and 3D libraries, UI components and AI tools, each with the one idea worth exploring.",
   "author": {
     "name": "Wunderlust",
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "Wunderlust",
     "shortDescription": "Creative cards for design",
-    "longDescription": "Wunderlust is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools for people who design and build: award-winning websites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools, agents and coding skills.\n\nEvery card is checked and written up by hand in plain English: what it is, what it is for, the one idea worth exploring in it, typical uses, benefits and caveats, with the official link.\n\nAsk for ideas while you design or build. Search the stash in your own words or by category, tag, design pattern or editorial pick; read the full write-up of a card with its caveats; find similar cards; get a random selection for inspiration; show chosen cards in the chat; or read a collection someone shared from Wunderlust as a brief. Answers with two or more cards include a board link that opens them side by side in the browser, with video.\n\nIt only reads the public stash. It needs no account and never changes anything.",
+    "longDescription": "Wunderlust is a hand-picked, always-growing stash of creative sites, skills, UI components and AI tools for people who design and build: award-winning websites, motion and animation libraries, 3D and WebGL tools, UI components, inspiration galleries, AI tools, agents and coding skills.\n\nEvery card is checked and written up by hand in plain English: what it is, what it is for, the one idea worth exploring in it, typical uses, benefits and caveats, with the official link.\n\nAsk for ideas while you design or build. Search the stash in your own words or by category, tag, design pattern or editorial pick; read the full write-up of a card with its caveats; find similar cards; get a random selection for inspiration; show chosen cards in the chat; or read a collection someone shared from Wunderlust as a brief. Answers with two or more cards include a board link that opens them side by side in the browser, with video.\n\nPublic reads need no account. Personal links read your stash and can add cards when saving is on.",
     "developerName": "Wunderlust",
     "category": "Creativity",
     "capabilities": [
@@ -22,7 +22,9 @@
       "Read the full write-up of a card, with its caveats and official link",
       "Find cards similar to one you like",
       "Show chosen cards in the chat, with cover and preview video",
-      "Read a collection someone shared from Wunderlust"
+      "Read a collection someone shared from Wunderlust",
+      "Read a public profile as a visitor",
+      "Search with fit labels, kind, sector, tone, newest order and date filters"
     ],
     "defaultPrompt": [
       "Find award-winning sites with scroll-driven storytelling",
